@@ -23,7 +23,7 @@ a{
 			*zoom: 1;
 }
 body{
-	background: url(../img/bg.jpg) no-repeat;
+	background: url(http://api.szfx.top/acg) no-repeat;
 	background-size:cover;
 	background-attachment: fixed;
 }
