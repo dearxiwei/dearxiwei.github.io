@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>来自旋风三人组的毕业留言</title>
+    <style>
+        .subheading {
+            font-size: 1.6rem;
+            margin: 0;
+            /* 去除默认的外边距 */
+            padding: 10px;
+            /* 设置内边距，增加小标题的大小 */
+            position: fixed;
+            right: 20px;
+            /* 修改为右侧距离屏幕 20px */
+            bottom: 20px;
+            /* 修改为底部距离屏幕 20px */
+            color: #333;
+            font-weight: bold;
+            background-color: #f1f1f1;
+            /* 添加背景颜色，更加醒目 */
+            border-radius: 20px;
+            /* 添加圆角边框 */
+        }
+
+        h1 {
+            font-size: 100px;
+            /* 设置字体大小 */
+            font-weight: bold;
+            /* 加粗字体 */
+            text-align: center;
+            /* 水平居中 */
+            color: #285943;
+            /* 字体颜色为淡灰色 */
+            margin: 125px auto 0 auto;
+            /* 距离顶部为 125 像素，左右自动调整 */
+            border: 2px solid grey;
+            /* 灰色的线框 */
+            border-radius: 60px;
+            /* 圆角为 10 像素 */
+            background-color: #8CD790;
+            /* 背景底色为淡绿色 */
+            padding: 20px 40px;
+            /* 上下内边距 20 像素，左右内边距 40 像素 */
+            line-height: 1.5;
+            /* 行高为字体大小的 1.5 倍 */
+            width: 600px;
+            /* 宽度为 200 像素 */
+        }
+
+        body {
+            background-color: #77AF9C;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .content {
+            width: 90%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            top: 50%;
+            height: 900px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .list {
+            width: 800px;
+            /*设置图片宽度*/
+            height: 900px;
+            /*设置图片高度*/
+            border: 5px solid #ccc;
+            /*添加边框*/
+            background-size: cover;
+            /*背景图片尽可能铺满元素*/
+            background-position: center;
+            /*设置背景图片位置*/
+            position: relative;
+            flex: 0.3;
+            margin: 10px;
+            border-radius: 30px;
+            cursor: pointer;
+            overflow: hidden;
+            transition: 1s all ease-in-out;
+        }
+
+        h3 {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            font-size: 30px;
+            font-family: '楷体';
+            color: #fff;
+            opacity: 0;
+            transition: 1s all ease-in-out;
+        }
+
+        .active {
+            position: relative;
+            flex: 3;
+            margin: 10px;
+            height: 100%;
+            border-radius: 30px;
+            cursor: pointer;
+            overflow: hidden;
+            transition: 1s all ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>To&nbsp;&nbsp;郑老师</h1>
+    <div class="content">
+        <div class="list active">
+            <h3>正面</h3>
+        </div>
+        <div class="list">
+            <h3>留言</h3>
+        </div>
+        <div class="list">
+            <h3>正面</h3>
+        </div>
+        <div class="list">
+            <h3>留言</h3>
+        </div>
+        <div class="list">
+            <h3>正面</h3>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <h2 class="subheading">旋风三人组：敏敏 · 安妮 · 马浩</h2>
+</body>
+
+</html>

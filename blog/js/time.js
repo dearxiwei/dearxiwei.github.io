@@ -1,6 +1,6 @@
 function show_date_time(){
 window.setTimeout("show_date_time()", 1000);
-BirthDay=new Date("10-23-2022 08:00:00");//建站日期
+BirthDay=new Date("7-6-2023 22:50:00");//建站日期
 today=new Date();
 timeold=(today.getTime()-BirthDay.getTime());
 sectimeold=timeold/1000

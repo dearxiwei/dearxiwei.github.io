@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>纪念册</title>
+    <link href="./favicon.ico" rel="shortcut icon bookmark" type="img/x-icon" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        /* 整个页面的样式 */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #F2F2F2;
+        }
+
+        body {
+            background-color: #D4DFE6;
+            background-image:
+                linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 50%, transparent 50%),
+                linear-gradient(to right, rgba(0, 0, 0, 0.05) 50%, transparent 50%);
+            background-size: 50px 50px;
+            position: relative;
+        }
+
+        body::before {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 10px;
+            /* 正方形高度 */
+        }
+
+        /* 大标题的样式 */
+        .header {
+            font-family: "Courier New", serif;
+            color: #6E7783;
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            padding: 20px;
+            background-color: #c9d6de;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* 相册容器的样式 */
+        .album-container {
+            display: flex;
+            flex-wrap: wrap;
+            /* 允许每行显示多张图片 */
+            align-items: center;
+            /* 垂直居中 */
+            justify-content: center;
+            /* 水平居中 */
+            padding: 30px;
+        }
+
+        /* 图片和文字的容器样式 */
+        .album-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 90%;
+            /* 宽度 */
+            margin: 15px;
+            position: relative;
+            background-color: #D4DFE6;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            overflow: hidden;
+            border: 3px solid #E5E5E5;
+        }
+
+        /* 图片的样式 */
+        .album-item img {
+            max-width: 100%;
+            /* 图片适应容器 */
+            height: auto;
+            border-radius: 8px;
+            /* 圆角 */
+        }
+
+        /* 文字的样式 */
+        .album-item p {
+            font-family: "SimSun", serif;
+            margin: 0;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            color: #FFF;
+            background-color: rgba(50, 50, 50, 0.4);
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            /* 鼠标悬停时逐渐显现 */
+        }
+
+        .album-item:hover p {
+            opacity: 1;
+        }
+
+        /* 底部的样式 */
+        .footer {
+            font-family: "SimSun", serif;
+            color: #6E7783;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px;
+            background-color: #D4DFE6;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            /* 始终显示在页面底部 */
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+    </style>
+    <script>
+        function toggleText() {
+            const title = document.getElementById("footer");
+            if (title.textContent.trim() === "——致最好的我们——") {
+                title.textContent = "旋风三人组：敏敏 · 安妮 · 马浩";
+            } else {
+                title.textContent = "——致最好的我们——";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="header">Hello Future!</div>
+    <div class="album-container">
+<div class="album-item"><a href="./img/cat1.jpg"><img src="./img/cat1.jpg" alt=""></a><p>相册1</p></div>
+<div class="album-item"><a href="./img/cat2.jpg"><img src="./img/cat2.jpg" alt=""></a><p>相册2</p></div>
+<div class="album-item"><a href="./img/cat3.jpg"><img src="./img/cat3.jpg" alt=""></a><p>相册3</p></div>
+<div class="album-item"><a href="./img/chess.jpg"><img src="./img/chess.jpg" alt=""></a><p>相册4</p></div>
+<div class="album-item"><a href="./img/eat1.jpg"><img src="./img/eat1.jpg" alt=""></a><p>相册5</p></div>
+<div class="album-item"><a href="./img/eat2.jpg"><img src="./img/eat2.jpg" alt=""></a><p>相册6</p></div>
+<div class="album-item"><a href="./img/eat3.jpg"><img src="./img/eat3.jpg" alt=""></a><p>相册7</p></div>
+<div class="album-item"><a href="./img/fan.jpg"><img src="./img/fan.jpg" alt=""></a><p>相册8</p></div>
+<div class="album-item"><a href="./img/hat.jpg"><img src="./img/hat.jpg" alt=""></a><p>相册9</p></div>
+<div class="album-item"><a href="./img/mirror.jpg"><img src="./img/mirror.jpg" alt=""></a><p>相册10</p></div>
+<div class="album-item"><a href="./img/play.jpg"><img src="./img/play.jpg" alt=""></a><p>相册11</p></div>
+<div class="album-item"><a href="./img/pos1.jpg"><img src="./img/pos1.jpg" alt=""></a><p>相册12</p></div>
+<div class="album-item"><a href="./img/pos2.jpg"><img src="./img/pos2.jpg" alt=""></a><p>相册13</p></div>
+<div class="album-item"><a href="./img/pos3.jpg"><img src="./img/pos3.jpg" alt=""></a><p>相册14</p></div>
+<div class="album-item"><a href="./img/spider.jpg"><img src="./img/spider.jpg" alt=""></a><p>相册15</p></div>
+<div class="album-item"><a href="./img/turtle.jpg"><img src="./img/turtle.jpg" alt=""></a><p>相册16</p></div>
+<div class="album-item"><a href="./img/wait.jpg"><img src="./img/wait.jpg" alt=""></a><p>相册17</p></div>
+    </div>
+    <div class="footer" id="footer" onclick="toggleText()">——致最好的我们——</div>
+</body>
+
+</html>

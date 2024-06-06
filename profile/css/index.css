@@ -1,10 +1,4 @@
 /* CSS Document */
-
-   /* 作者：筱健  初学html
-    源码分享QQ群：1026574662
-    欢迎进来互相学习和交流
-    请保留版权，尊重作者的努力！
-*/
 *{
 	margin: 0;
 	padding: 0;
@@ -23,7 +17,7 @@ a{
 			*zoom: 1;
 }
 body{
-	background: url(http://api.szfx.top/acg) no-repeat;
+	background: url(../img/bg.jpg) no-repeat;
 	background-size:cover;
 	background-attachment: fixed;
 }
