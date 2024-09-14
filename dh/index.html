@@ -1,196 +1,543 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
+
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title id="title"></title>
-  <meta name="keywords" content="，默笙科技网">
-  <meta name="description" content="单纯就是一个导航">
-  <link rel="stylesheet icon" href="img/icon.ico"/>
-  <link rel="stylesheet" type="text/css" href="bootstrap/bootstrap.css">
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-  <script type="text/javascript" src="js/jQuery.js"></script>
-  <script type="text/javascript" src="bootstrap/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="css/slideout.css">
-  <script>
-    var now = new Date().getTime();
-    document.write('<link href="css/style.css?v=' + now + '" rel="stylesheet" type="text/css"/>');
-	</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <link rel="icon" href="images/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="mdui/css/mdui.min.css">
+    <script src="mdui/js/mdui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="waves/waves.min.css" />
+    <link rel="stylesheet" type="text/css" href="theme.css" />
+    <link rel="stylesheet" type="text/css" href="BGDialog/BGDialog.css" />
+    <title>Burger工具站 - 资源收藏与分享</title>
+    <meta name="Description" content="Burger工具站，一个资源分享站，致力于收集实用与有趣的资源。" />
+    <meta name="Keywords" content="资源 工具" />
 </head>
-<body>
-  <nav id="menu" class="menu">
-   <blockquote class="blockquote">▎ 工具</blockquote> 
-   <ul>
-    <a target="_blank" href="http://forsigner.com/browser-md5-file/"><li class="sidenav-btn">查询文件MD5<p>forsigner的项目</p></li></a> 
-    <a target="_blank" href="http://www.speedtest.cn/"><li class="sidenav-btn">SpeedTest<p>测速网</p></li></a> 
-    <a target="_blank" href="http://ip.tool.chinaz.com/"><li class="sidenav-btn">IP查询<p>站长工具</p></li></a> 
-    <a target="_blank" href="https://www.mdeditor.com/"><li class="sidenav-btn">MD编辑器<p>在线编辑MD</p></li></a> 
-    <a target="_blank" href="https://www.baiduwp.com/"><li class="sidenav-btn">网盘解析<p>破解云盘</p></li></a> 
-    <a target="_blank" href="https://mm.edrawsoft.cn/"><li class="sidenav-btn">思维导图<p>在线思维导图工具</p></li></a>
-    <a target="_blank" href="http://www.orgloft.com/page/luckyDraw.html"><li class="sidenav-btn">随机数<p>简单的随机数抽奖</p></li></a> 
-    <a target="_blank" href="https://www.desmos.com/calculator"><li class="sidenav-btn">desmos<p>在线函数图生成</p></li></a> 
-    <a target="_blank" href="https://123apps.com/cn/"><li class="sidenav-btn">123apps<p>免费网络应用</p></li></a> 
-    <a target="_blank" href="https://tool.oschina.net/"><li class="sidenav-btn">OSCHINA<p>应有尽有</p></li></a> 
-    <a target="_blank" href="https://5iux.cn/base64/"><li class="sidenav-btn">base64<p>加密解密base64</p></li></a> 
-    <a target="_blank" href="http://ping.pe/"><li class="sidenav-btn">ping.pe<p>黑科技感的ping</p></li></a> 
-    <a target="_blank" href="https://m.apkpure.com/cn/"><li class="sidenav-btn">Apkpure<p>国外类谷歌应用商店</p></li></a> 
-   </ul> 
-   <blockquote class="blockquote">▎ 文件传送</blockquote> 
-   <ul> 
-    <a target="_blank" href="https://cowtransfer.com/"><li class="sidenav-btn">奶牛快传<p>安全、省时高效</p></li></a> 
-    <a target="_blank" href="https://www.wenshushu.cn/"><li class="sidenav-btn">文叔叔<p>传文件的酸爽！</p></li></a> 
-    <a target="_blank" href="https://send.firefox.com/"><li class="sidenav-btn">FirefoxSend<p>安全高效火狐传送</p></li></a> 
-    <a target="_blank" href="https://app.tmp.link/"><li class="sidenav-btn">TMPLink<p>简单临时文件中转</p></li></a> 
-    <a target="_blank" href="https://pan.baidu.com/"><li class="sidenav-btn">百度云盘<p>毒！</p></li></a> 
-   </ul> 
-   <blockquote class="blockquote">▎ 社交媒体</blockquote> 
-   <ul> 
-    <a target="_blank" href="https://www.52pojie.cn/"><li class="sidenav-btn">吾爱破解<p>软件破解基地</p></li></a> 
-    <a target="_blank" href="https://www.youtube.com/"><li class="sidenav-btn">Youtube<p>国外视频网站</p></li></a> 
-    <a target="_blank" href="https://www.csdn.net/"><li class="sidenav-btn">CSDN<p>IT技术社区</p></li></a> 
-    <a target="_blank" href="https://www.zhihu.com/"><li class="sidenav-btn">知乎<p>有问题，上知乎</p></li></a> 
-    <a target="_blank" href="https://www.weibo.com/"><li class="sidenav-btn">微博<p>欣赏世界精彩瞬间</p></li></a> 
-    <a target="_blank" href="https://www.instagram.com/"><li class="sidenav-btn">Instagram<p>国外图片分享社区</p></li></a> 
-    <a target="_blank" href="https://twitter.com/"><li class="sidenav-btn">Twitter<p>国外微博</p></li></a> 
-    <a target="_blank" href="https://www.facebook.com/"><li class="sidenav-btn">Facebook<p>一本面子书</p></li></a> 
-   </ul> 
-   <blockquote class="blockquote">▎ 个人网站</blockquote> 
-   <ul> 
-    <a target="_blank" href="网站"><li class="sidenav-btn">标题<p>介绍</p></li></a> 
-    <a target="_blank" href="网站"><li class="sidenav-btn">标题<p>介绍</p></li></a> 
-    <a target="_blank" href="网站"><li class="sidenav-btn">标题<p>介绍</p></li></a> 
-    <a target="_blank" href="网站"><li class="sidenav-btn">标题<p>介绍</p></li></a> 
-   </ul> 
-   <blockquote class="blockquote">▎ 新闻</blockquote> 
-   <ul> 
-    <a target="_blank" href="http://www.chinadaily.com.cn/"><li class="sidenav-btn">中国日报</li></a> 
-    <a target="_blank" href="http://www.sc168.com/"><li class="sidenav-btn">顺德新闻</li></a> 
-    <a target="_blank" href="http://news.cctv.com/"><li class="sidenav-btn">央视新闻</li></a> 
-    <a target="_blank" href="https://www.thepaper.cn/"><li class="sidenav-btn">澎湃新闻</li></a> 
-    <a target="_blank" href="https://www.hk01.com/"><li class="sidenav-btn">香港01</li></a> 
-    <a target="_blank" href="https://www.msn.com/zh-tw/news"><li class="sidenav-btn">台湾即时新闻</li></a> 
-    <a target="_blank" href="https://www.bbc.com/"><li class="sidenav-btn">BBC</li></a> 
-    <a target="_blank" href="https://www.nhk.or.jp/"><li class="sidenav-btn">NHK</li></a> 
-   </ul> 
-   <blockquote class="blockquote">▎ 追剧</blockquote> 
-   <ul> 
-    <a target="_blank" href="http://www.mp4ba.la/"><li class="sidenav-btn">MP4吧<p>高清MP4吧</p></li></a> 
-    <a target="_blank" href="http://www.rrys2019.com/"><li class="sidenav-btn">YYeTs<p>人人字幕组</p></li></a> 
-    <a target="_blank" href="https://ddrk.me/"><li class="sidenav-btn">低端影视<p>超清在线视频站</p></li></a> 
-    <a target="_blank" href="https://www.biyov.com/"><li class="sidenav-btn">比优视频<p>人生如戏</p></li></a> 
-    <a target="_blank" href="http://www.novipnoad.com/"><li class="sidenav-btn">NO视频<p>不负追剧好时光</p></li></a> 
-    <a target="_blank" href="http://www.doki8.com/"><li class="sidenav-btn">doki8<p>心动日剧</p></li></a> 
-    <a target="_blank" href="http://www.zzrbl.com/"><li class="sidenav-btn">猪猪日部落<p>猪猪日剧字幕组</p></li></a> 
-    <a target="_blank" href="https://bde4.com/"><li class="sidenav-btn">哔嘀影视<p>热门最新电影</p></li></a> 
-    <a target="_blank" href="http://1090ys.com/"><li class="sidenav-btn">1090影视<p>挺全的电影</p></li></a> 
-    <a target="_blank" href="https://www.shenma4480.com/"><li class="sidenav-btn">神马影院<p>神马都有？</p></li></a> 
-   </ul> 
-   <blockquote class="blockquote">▎ 开发</blockquote> 
-   <ul> 
-    <a target="_blank" href="https://developer.mozilla.org/zh-CN/"><li class="sidenav-btn">MDN<p>服务开发者</p></li></a> 
-    <a target="_blank" href="https://cdnjs.com/"><li class="sidenav-btn">cdnjs<p>Web开发资源</p></li></a> 
-    <a target="_blank" href="https://www.w3school.com.cn/"><li class="sidenav-btn">W3school<p>Web技术教程</p></li></a> 
-    <a target="_blank" href="https://github.com/"><li class="sidenav-btn">Github<p>分布式版本管理</p></li></a> 
-    <a target="_blank" href="https://codepen.io/"><li class="sidenav-btn">Codepen<p>Coding online</p></li></a> 
-    <a target="_blank" href="https://uigradients.com/"><li class="sidenav-btn">uiGradients<p>网页设计配色</p></li></a> 
-    <a target="_blank" href="https://cssfx.netlify.com/"><li class="sidenav-btn">CSSFX<p>CSS效果</p></li></a> 
-    <a target="_blank" href="https://www.faviator.xyz/"><li class="sidenav-btn">Faviator<p>自动生成图标</p></li></a> 
-    <a target="_blank" href="https://www.iconfont.cn/"><li class="sidenav-btn">IconFont<p>阿里巴巴图标库</p></li></a> 
-    <a target="_blank" href="https://cloudconvert.com/"><li class="sidenav-btn">FileConvert<p>文件转换器</p></li></a> 
-   </ul> 
-   <blockquote class="blockquote">▎ 关于我的</blockquote> 
-   <ul> 
-    <a target="_blank" href="http://123.hegong.xyz"><li class="sidenav-btn">站长网<p>一个摸鱼的网站</p></li></a> 
-    <a href="网址"><li class="sidenav-btn">标题<p>介绍</p></li></a>
-   </ul> 
-   <blockquote class="blockquote">▎ 设置</blockquote> 
-   <ul> 
-    <a href="#"><li class="sidenav-btn" id="night">夜间模式</li></a>
-    <a href="#"><li class="sidenav-btn" id="bg">关掉/显示壁纸</li></a>
-   </ul>
-   <p style="width:100%;text-align:center;margin:0 auto;font-size:14px;color:lightgray;">2020 © <a style="color: lightgray;" href="http://www.coolapk.com/u/691518">小白科技</a><br>ALL RIGHTS RESERVED.</p>
-  </nav>
 
-  <!-- 主页面 -->
-  <main id="main" class="panel">
-  <!-- 天气 -->
-  <div id="tp-weather-widget"></div>
-   <!-- 主容器 -->
-   <div class="container">
-
-    <!-- 侧边栏按钮 -->
-    <img class="slidebtn btn-hamburger js-slideout-toggle" src="img/menu.svg" /> 
-    <!-- 搜索盒子 --> 
-    <div class="search-box"> 
-     <!-- logo --> 
-     <div id="logo"> 
-      <div id="state"> 
-       <a href="folder://"><img id="img" src="img/bing.png" /></a>
-      </div>
-     </div>
-
-     <!-- 搜索框 --> 
-     <div class="inputDiv">
-      <form id="form" action="https://cn.bing.com/search" target="_self" onsubmit="return check()"> 
-      <input onmouseover="this.focus()" onfocus="this.select()" id="inputText" type="text" placeholder="Bing搜索..." name="q" size="30" /> 
-      <button id="submitButton" class="submitButton" type="submit"></button>
-      </form>
-      <!-- 搜索提示词 -->
-      <div id="searchlist">
-        <ul id="list"></ul>
-      </div>
+<body class="mdui-drawer-body-left">
+    <header class="mdui-appbar mdui-appbar-fixed mdui-appbar-inset mdui-shadow-0">
+        <div class="mdui-toolbar" id="toolbar">
+            <a class="mdui-btn mdui-btn-icon waves-circle toolbar-btn" mdui-drawer="{target: '#drawer', swipe: true}">
+                <i class="mdui-icon material-icons">menu</i>
+            </a>
+            <a class="mdui-typo-headline" href="index.html" id="headline" style="opacity: 0;">Burger工具站</a>
+            <div class="mdui-toolbar-spacer"></div>
+            <a class="mdui-btn mdui-btn-icon waves-circle toolbar-btn" mdui-dialog="{target: '#offline'}" mdui-tooltip="{content: '获取离线版'}" onclick="update()">
+                <i class="mdui-icon material-icons">cloud_download</i>
+            </a>
+            <a id="switch-theme" class="mdui-btn mdui-btn-icon waves-circle toolbar-btn" mdui-tooltip="{content: '打开调色板'}" mdui-dialog="{target: '#setTheme'}">
+                <i class="mdui-icon material-icons">color_lens</i>
+            </a>
+        </div>
+    </header>
+    <div class="mdui-dialog mdui-color-theme-50" id="offline">
+        <div class="mdui-dialog-title">获取离线版</div>
+        <div class="mdui-dialog-content">
+            <div class="mdui-spinner mdui-center" id="updateSpinner"></div>
+            <div id="updateDate"></div>
+            <div id="updateChange"></div>
+            <p class="mdui-text-color-red" id="updateNote"></p>
+            <p class="mdui-text-color-green" id="alreadyUpdate" style="display: none;">已是最新版本</p>
+            <p class="mdui-text-color-green" id="updateAvailable" style="display: none;">有可用的版本更新</p><br><br><br>
+        </div>
+        <div class="mdui-dialog-actions mdui-dialog-actions-stacked" style="padding: 8px;">
+            <a href="https://www.123pan.com/s/kklDVv-6R0bd" class="waves-block radius"><button class="mdui-btn">获取最新版本</button></a>
+            <div class="waves-block radius"><button class="mdui-btn" mdui-dialog-close>关闭</button></div>
+        </div>
+        <script src="update.js"></script>
     </div>
-
-    <!-- 书签、引擎选择器 --> 
-    <div id="Select" class="Select" onclick="select()">
-     <hr>书签 
-     <img src="img/search-change.svg?v=2ae7ab8" />
-    </div> 
-    <!-- 书签 --> 
-    <div id="folder" class="folder"> 
-     <ul></ul>
-    </div> 
-
-    <!-- 导航引擎 --> 
-    <div id="nav" class="nav"> 
-     <ul></ul> 
+    <div class="mdui-drawer mdui-color-theme-50" id="drawer">
+        <img class="mdui-img-fluid" src="images/BGS_IMAGE_20210919.jpg" / id="bgsImage">
+        <ul class="mdui-list" mdui-collapse="{accordion: true}" style="padding: 8px;" id="mduiDrawerList">
+            <a href="index.html" class="waves-block radius">
+                <li class="mdui-list-item mdui-color-theme">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+                    <div class="mdui-list-item-content">首页</div>
+                </li>
+            </a>
+            <a href="sysImg.html" class="waves-block radius">
+                <li class="mdui-list-item">
+                    <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-red">storage</i>
+                    <div class="mdui-list-item-content">系统镜像</div>
+                </li>
+            </a>
+            <a href="apps.html" class="waves-block radius">
+                <li class="mdui-list-item">
+                    <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-orange">apps</i>
+                    <div class="mdui-list-item-content">应用程序</div>
+                </li>
+            </a>
+            <a href="websites.html" class="waves-block radius">
+                <li class="mdui-list-item">
+                    <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-green">public</i>
+                    <div class="mdui-list-item-content">网络站点</div>
+                </li>
+            </a>
+            <a href="more.html" class="waves-block radius">
+                <li class="mdui-list-item">
+                    <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-cyan">attach_file</i>
+                    <div class="mdui-list-item-content">更多资源</div>
+                </li>
+            </a>
+            <a href="tools.html" class="waves-block radius">
+                <li class="mdui-list-item">
+                    <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-blue">build</i>
+                    <div class="mdui-list-item-content">JS工具</div>
+                </li>
+            </a>
+            <a href="about.html" class="waves-block radius">
+                <li class="mdui-list-item">
+                    <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-purple">info</i>
+                    <div class="mdui-list-item-content">关于我们</div>
+                </li>
+            </a>
     </div>
-
-    
-
-   </div>
-  </main>
- 
-<script type="text/javascript" src="js/slideout.min.js"></script>
-<script type="text/javascript">
-  var slideout = new Slideout({
-    'panel': document.getElementById('main'),
-    'menu': document.getElementById('menu'),
-    'padding': 290,
-    'tolerance': 70
-  });
-  document.querySelector('.js-slideout-toggle').addEventListener('click',
-  function() {
-    slideout.toggle();
-  });
-  document.querySelector('.menu').addEventListener('click',
-  function(eve) {
-    if (eve.target.nodeName === 'A') {
-      slideout.close();
-    }
-  });
-  $(document).click(function(e) {
-    var Class = $(e.target).attr("class");
-    var Id = $(e.target).attr("id");
-    if (Class == 'panel slideout-panel slideout-panel-left' || Class == 'folder-item col-xs-3 col-sm-2' || Class == 'search-box' || Id == 'inputText' || Id == 'logo') {
-      slideout.close();
-    }
-  });
-</script>
-
+    </ul>
+    </div>
+    <br><br><br><br>
+    <p class="title" style="margin: 24px;font-size: 32px;">Burger工具站</p>
+    <div class="mdui-card mdui-m-l-2 mdui-m-r-2 mdui-m-t-2 mdui-m-b-2 mdui-shadow-0 mdui-color-theme-50">
+        <div class="mdui-m-l-2 mdui-m-r-2 mdui-m-t-2 mdui-m-b-2">
+            <h1 class="mdui-text-color-theme title">首页</h1>
+            <div class="mdui-text-center">
+                <img src="images/BGS_HEADER_20210919.jpg" class="mdui-img-fluid" style="border-radius: 10px;margin-left: auto;margin-right: auto;max-height: 96px;">
+                <br>
+                <p style="font-size: 16px;" class="mdui-text-color-theme-text">欢迎访问 Burger工具站</p>
+            </div>
+            <div class="mdui-divider"></div><br>
+            <ul class="mdui-list">
+                <div class="mdui-row-xs-1 mdui-row-sm-2 mdui-row-md-2 mdui-row-lg-3 mdui-row-gapless">
+                    <a href="sysImg.html" class="mdui-col">
+                        <div class="radius waves-block">
+                            <li class="mdui-list-item">
+                                <i class="mdui-icon material-icons mdui-list-item-avatar mdui-color-red">storage</i>
+                                <div class="mdui-list-item-content">
+                                    <div class="mdui-list-item-title">系统镜像</div>
+                                    <div class="mdui-list-item-text">获取各种操作系统映像文件</div>
+                                </div>
+                            </li>
+                        </div>
+                    </a>
+                    <a href="apps.html" class="mdui-col">
+                        <div class="radius waves-block">
+                            <li class="mdui-list-item">
+                                <i class="mdui-icon material-icons mdui-list-item-avatar mdui-color-orange mdui-text-color-white">apps</i>
+                                <div class="mdui-list-item-content">
+                                    <div class="mdui-list-item-title">应用程序</div>
+                                    <div class="mdui-list-item-text">实用应用程序、工具</div>
+                                </div>
+                            </li>
+                        </div>
+                    </a>
+                    <a href="websites.html" class="mdui-col">
+                        <div class="radius waves-block">
+                            <li class="mdui-list-item">
+                                <i class="mdui-icon material-icons mdui-list-item-avatar mdui-color-green mdui-text-color-white">public</i>
+                                <div class="mdui-list-item-content">
+                                    <div class="mdui-list-item-title">网络站点</div>
+                                    <div class="mdui-list-item-text">推荐网站、友情链接</div>
+                                </div>
+                            </li>
+                        </div>
+                    </a>
+                    <a href="more.html" class="mdui-col">
+                        <div class="radius waves-block">
+                            <li class="mdui-list-item">
+                                <i class="mdui-icon material-icons mdui-list-item-avatar mdui-color-cyan mdui-text-color-white">attach_file</i>
+                                <div class="mdui-list-item-content">
+                                    <div class="mdui-list-item-title">更多资源</div>
+                                    <div class="mdui-list-item-text">其他资源、资源分类收集</div>
+                                </div>
+                            </li>
+                        </div>
+                    </a>
+                    <a href="tools.html" class="mdui-col">
+                        <div class="radius waves-block">
+                            <li class="mdui-list-item">
+                                <i class="mdui-icon material-icons mdui-list-item-avatar mdui-color-blue mdui-text-color-white">build</i>
+                                <div class="mdui-list-item-content">
+                                    <div class="mdui-list-item-title">JS工具</div>
+                                    <div class="mdui-list-item-text">利用 JavaScript 编写的小工具</div>
+                                </div>
+                            </li>
+                        </div>
+                    </a>
+                    <a href="about.html" class="mdui-col">
+                        <div class="radius waves-block">
+                            <li class="mdui-list-item">
+                                <i class="mdui-icon material-icons mdui-list-item-avatar mdui-color-purple">info</i>
+                                <div class="mdui-list-item-content">
+                                    <div class="mdui-list-item-title">关于我们</div>
+                                    <div class="mdui-list-item-text">了解 Burger Studio 的更多信息</div>
+                                </div>
+                            </li>
+                        </div>
+                    </a>
+                </div>
+            </ul>
+        </div>
+        <p id="yiYan" style="text-align: center;padding: 0 8px 8px 8px;" onclick="javascript:openDialog('#yiYanDialog')"></p>
+        <div class="burger-dialog mdui-color-theme-50" id="yiYanDialog">
+            <div class="burger-dialog-title" style="text-align: center;" id="yiYanTitle"></div>
+            <div class="burger-dialog-content" style="text-align: center;font-size: 16px;margin-top: 24px;" id="yiYanContent"></div>
+            <div class="burger-dialog-actions" style="left: 16px;">
+                <button class="waves-light burger-dialog-btn-colored mdui-color-theme" onclick="closeDialog('#yiYanDialog');copyHandle(document.querySelector('#yiYanContent').innerText);" style="width: 80%;height: 48px;font-size: 16px;">复制</button>
+            </div>
+        </div>
+        <div class="burger-dialog burger-dialog-bottom mdui-color-theme-50" id="hotUpdateDialog">
+            <div class="burger-dialog-title">有可用的版本更新</div>
+            <div class="burger-dialog-content" id="hotUpdateContent" style="font-size: 16px;"></div><br><br><br><br><br><br><br><br><br><br>
+            <div class="burger-dialog-actions">
+                <button class="waves-block mdui-color-theme-50 mdui-text-color-theme" onclick="closeDialog('#hotUpdateDialog');" id="hotUpdateIgnore">忽略</button>
+                <button class="waves-block mdui-color-theme-50 mdui-text-color-theme" onclick="closeDialog('#hotUpdateDialog');" id="hotUpdateUpdate">更新</button>
+            </div>
+        </div>
+    </div>
+    <br>
+    <footer class="mdui-text-center mdui-color-theme-50 auto-dark">
+        <br>
+        <div class="waves-circle">
+            <a class="mdui-btn mdui-btn-icon" href="mailto:vmos1624@163.com" mdui-tooltip="{content: '网易邮箱'}">
+                <i class="mdui-icon material-icons">email</i>
+            </a>
+        </div>
+        <div class="waves-circle" mdui-tooltip="{content: '微信'}" mdui-menu="{target: '#wechat'}">
+            <button class="mdui-btn mdui-btn-icon">
+                <img src="images/WeChat-logo.png" class="mdui-img-fluid">
+            </button>
+        </div>
+        <div class="mdui-menu mdui-color-white" id="wechat">
+            <img src="images/WeChat.png" class="mdui-img-fluid">
+        </div>
+        <div class="waves-circle">
+            <button class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: 'QQ'}" mdui-dialog="{target: '#qq'}">
+                <img src="images/QQ-logo.png" style="width:32px;height:32px;">
+            </button>
+        </div>
+        <div class="mdui-dialog" id="qq" style="width: 26.7%;height: 50%;">
+            <img src="images/QQ.jpg" style="width: 100%;height: 100%;">
+        </div>
+        <div class="waves-circle">
+            <a class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: 'Telegram'}" href="https://t.me/BGS_XNJ">
+                <i class="mdui-icon material-icons">send</i>
+            </a>
+        </div>
+        <br>
+        <p><label>前端框架：<a href="https://www.mdui.org/" class="footerlink">MDUI</a></label></p>
+        <p><label>开发工具：<a href="https://atreep.netlify.app/hopweb/index.html" class="footerlink">HopWeb</a></label></p>
+        <p style="font-size: 16px;font-weight: bold;">2023 - Burger Studio</p>
+        <br>
+    </footer>
+    <a class="mdui-fab mdui-fab-fixed mdui-color-theme-accent mdui-fab-hide waves-block waves-light" id="fab" onclick="window.scrollTo(0,0);">
+        <i class="mdui-icon material-icons">keyboard_arrow_up</i>
+    </a>
+    <script src="toTop.js"></script>
+    <div class="mdui-dialog mdui-color-theme-50" id="setTheme">
+        <div class="mdui-toolbar" style="margin-top: 8px;padding-left: 8px;">
+            <span class="mdui-typo-title">调色板</span>
+            <div class="mdui-toolbar-spacer"></div>
+            <div class="waves-circle"><button class="mdui-btn mdui-btn-icon" mdui-dialog-close><i class="mdui-icon material-icons">close</i></button></div>
+        </div>
+        <div class="mdui-dialog-content">
+            <p style="font-size: 16px;">夜间模式</p>
+            <form>
+                <div class="mdui-row-xs-2 mdui-row-sm-3 mdui-row-md-4 mdui-row-lg-5">
+                    <label class="mdui-radio mdui-col" onclick="setDarkTheme('bySystem');">
+                        <input type="radio" name="setDarkTheme" id="setDarkTheme1" />
+                        <i class="mdui-radio-icon"></i>
+                        跟随浏览器
+                    </label>
+                    <label class="mdui-radio mdui-col" onclick="setDarkTheme('disabled')">
+                        <input type="radio" name="setDarkTheme" id="setDarkTheme2" />
+                        <i class="mdui-radio-icon"></i>
+                        关闭
+                    </label>
+                    <label class="mdui-radio mdui-col" onclick="setDarkTheme('enabled');">
+                        <input type="radio" name="setDarkTheme" id="setDarkTheme3" />
+                        <i class="mdui-radio-icon"></i>
+                        开启
+                    </label>
+                    <label class="mdui-radio mdui-col" onclick="setDarkTheme('byTime')">
+                        <input type="radio" name="setDarkTheme" id="setDarkTheme4" />
+                        <i class="mdui-radio-icon"></i>
+                        基于时间
+                    </label>
+                </div>
+            </form>
+            <p style="font-size: 16px;">主色</p>
+            <form>
+                <div class="mdui-row-xs-2 mdui-row-sm-3 mdui-row-md-4 mdui-row-lg-5">
+                    <label class="mdui-radio mdui-col mdui-text-color-red" onclick="setPrimaryTheme('red')">
+                        <input type="radio" name="setPrimaryTheme" id="setPrimaryThemered" />
+                        <i class="mdui-radio-icon"></i>
+                        Red
+                    </label>
+                    <label class="mdui-radio mdui-col mdui-text-color-pink" onclick="setPrimaryTheme('pink')">
+                        <input type="radio" name="setPrimaryTheme" id="setPrimaryThemepink" />
+                        <i class="mdui-radio-icon"></i>
+                        Pink
+                    </label>
+                    <label class="mdui-radio mdui-col mdui-text-color-purple" onclick="setPrimaryTheme('purple')">
+                        <input type="radio" name="setPrimaryTheme" id="setPrimaryThemepurple" />
+                        <i class="mdui-radio-icon"></i>
+                        Purple
+                    </label>
+                    <label class="mdui-radio mdui-col mdui-text-color-deep-purple" onclick="setPrimaryTheme('deep-purple')">
+                        <input type="radio" name="setPrimaryTheme" id="setPrimaryThemedeep-purple" />
+                        <i class="mdui-radio-icon"></i>
+                        Deep-Purple
+                    </label>
+                    <label class="mdui-radio mdui-col mdui-text-color-indigo" onclick="setPrimaryTheme('indigo')">
+                        <input type="radio" name="setPrimaryTheme" id="setPrimaryThemeindigo" />
+                        <i class="mdui-radio-icon"></i>
+                        Indigo
+                    </label>
+                    <label class="mdui-radio mdui-col mdui-text-color-blue" onclick="setPrimaryTheme('blue')">
+                        <input type="radio" name="setPrimaryTheme" id="setPrimaryThemeblue" />
+                        <i class="mdui-radio-icon"></i>
+                        Blue
+                    </label>
+                    <label class="mdui-radio mdui-col mdui-text-color-light-blue" onclick="setPrimaryTheme('light-blue')">
+                        <input type="radio" name="setPrimaryTheme" id="setPrimaryThemelight-blue" />
+                        <i class="mdui-radio-icon"></i>
+                        Light-Blue
+                    </label>
+                    <label class="mdui-radio mdui-col mdui-text-color-cyan" onclick="setPrimaryTheme('cyan')">
+                        <input type="radio" name="setPrimaryTheme" id="setPrimaryThemecyan" />
+                        <i class="mdui-radio-icon"></i>
+                        Cyan
+                    </label>
+                    <label class="mdui-radio mdui-col mdui-text-color-teal" onclick="setPrimaryTheme('teal')">
+                        <input type="radio" name="setPrimaryTheme" id="setPrimaryThemeteal" />
+                        <i class="mdui-radio-icon"></i>
+                        Teal
+                    </label>
+                    <label class="mdui-radio mdui-col mdui-text-color-green" onclick="setPrimaryTheme('green')">
+                        <input type="radio" name="setPrimaryTheme" id="setPrimaryThemegreen" />
+                        <i class="mdui-radio-icon"></i>
+                        Green
+                    </label>
+                    <label class="mdui-radio mdui-col mdui-text-color-light-green" onclick="setPrimaryTheme('light-green')">
+                        <input type="radio" name="setPrimaryTheme" id="setPrimaryThemelight-green" />
+                        <i class="mdui-radio-icon"></i>
+                        Light-Green
+                    </label>
+                    <label class="mdui-radio mdui-col mdui-text-color-lime" onclick="setPrimaryTheme('lime')">
+                        <input type="radio" name="setPrimaryTheme" id="setPrimaryThemelime" />
+                        <i class="mdui-radio-icon"></i>
+                        Lime
+                    </label>
+                    <label class="mdui-radio mdui-col mdui-text-color-yellow" onclick="setPrimaryTheme('yellow')">
+                        <input type="radio" name="setPrimaryTheme" id="setPrimaryThemeyellow" />
+                        <i class="mdui-radio-icon"></i>
+                        Yellow
+                    </label>
+                    <label class="mdui-radio mdui-col mdui-text-color-amber" onclick="setPrimaryTheme('amber')">
+                        <input type="radio" name="setPrimaryTheme" id="setPrimaryThemeamber" />
+                        <i class="mdui-radio-icon"></i>
+                        Amber
+                    </label>
+                    <label class="mdui-radio mdui-col mdui-text-color-orange" onclick="setPrimaryTheme('orange')">
+                        <input type="radio" name="setPrimaryTheme" id="setPrimaryThemeorange" />
+                        <i class="mdui-radio-icon"></i>
+                        Orange
+                    </label>
+                    <label class="mdui-radio mdui-col mdui-text-color-deep-orange" onclick="setPrimaryTheme('deep-orange')">
+                        <input type="radio" name="setPrimaryTheme" id="setPrimaryThemedeep-orange" />
+                        <i class="mdui-radio-icon"></i>
+                        Deep-Orange
+                    </label>
+                    <label class="mdui-radio mdui-col mdui-text-color-brown" onclick="setPrimaryTheme('brown')">
+                        <input type="radio" name="setPrimaryTheme" id="setPrimaryThemebrown" />
+                        <i class="mdui-radio-icon"></i>
+                        Brown
+                    </label>
+                    <label class="mdui-radio mdui-col mdui-text-color-grey" onclick="setPrimaryTheme('grey')">
+                        <input type="radio" name="setPrimaryTheme" id="setPrimaryThemegrey" />
+                        <i class="mdui-radio-icon"></i>
+                        Grey
+                    </label>
+                    <label class="mdui-radio mdui-col mdui-text-color-blue-grey" onclick="setPrimaryTheme('blue-grey')">
+                        <input type="radio" name="setPrimaryTheme" id="setPrimaryThemeblue-grey" />
+                        <i class="mdui-radio-icon"></i>
+                        Blue-Grey
+                    </label>
+                </div>
+            </form>
+            <p style="font-size: 16px;">强调色</p>
+            <form>
+                <div class="mdui-row-xs-2 mdui-row-sm-3 mdui-row-md-4 mdui-row-lg-5">
+                    <label class="mdui-radio mdui-col mdui-text-color-red" onclick="setAccentTheme('red')">
+                        <input type="radio" name="setAccentTheme" id="setAccentThemered" />
+                        <i class="mdui-radio-icon"></i>
+                        Red
+                    </label>
+                    <label class="mdui-radio mdui-col mdui-text-color-pink" onclick="setAccentTheme('pink')">
+                        <input type="radio" name="setAccentTheme" id="setAccentThemepink" />
+                        <i class="mdui-radio-icon"></i>
+                        Pink
+                    </label>
+                    <label class="mdui-radio mdui-col mdui-text-color-purple" onclick="setAccentTheme('purple')">
+                        <input type="radio" name="setAccentTheme" id="setAccentThemepurple" />
+                        <i class="mdui-radio-icon"></i>
+                        Purple
+                    </label>
+                    <label class="mdui-radio mdui-col mdui-text-color-deep-purple" onclick="setAccentTheme('deep-purple')">
+                        <input type="radio" name="setAccentTheme" id="setAccentThemedeep-purple" />
+                        <i class="mdui-radio-icon"></i>
+                        Deep-Purple
+                    </label>
+                    <label class="mdui-radio mdui-col mdui-text-color-indigo" onclick="setAccentTheme('indigo')">
+                        <input type="radio" name="setAccentTheme" id="setAccentThemeindigo" />
+                        <i class="mdui-radio-icon"></i>
+                        Indigo
+                    </label>
+                    <label class="mdui-radio mdui-col mdui-text-color-blue" onclick="setAccentTheme('blue')">
+                        <input type="radio" name="setAccentTheme" id="setAccentThemeblue" />
+                        <i class="mdui-radio-icon"></i>
+                        Blue
+                    </label>
+                    <label class="mdui-radio mdui-col mdui-text-color-light-blue" onclick="setAccentTheme('light-blue')">
+                        <input type="radio" name="setAccentTheme" id="setAccentThemelight-blue" />
+                        <i class="mdui-radio-icon"></i>
+                        Light-Blue
+                    </label>
+                    <label class="mdui-radio mdui-col mdui-text-color-cyan" onclick="setAccentTheme('cyan')">
+                        <input type="radio" name="setAccentTheme" id="setAccentThemecyan" />
+                        <i class="mdui-radio-icon"></i>
+                        Cyan
+                    </label>
+                    <label class="mdui-radio mdui-col mdui-text-color-teal" onclick="setAccentTheme('teal')">
+                        <input type="radio" name="setAccentTheme" id="setAccentThemeteal" />
+                        <i class="mdui-radio-icon"></i>
+                        Teal
+                    </label>
+                    <label class="mdui-radio mdui-col mdui-text-color-green" onclick="setAccentTheme('green')">
+                        <input type="radio" name="setAccentTheme" id="setAccentThemegreen" />
+                        <i class="mdui-radio-icon"></i>
+                        Green
+                    </label>
+                    <label class="mdui-radio mdui-col mdui-text-color-light-green" onclick="setAccentTheme('light-green')">
+                        <input type="radio" name="setAccentTheme" id="setAccentThemelight-green" />
+                        <i class="mdui-radio-icon"></i>
+                        Light-Green
+                    </label>
+                    <label class="mdui-radio mdui-col mdui-text-color-lime" onclick="setAccentTheme('lime')">
+                        <input type="radio" name="setAccentTheme" id="setAccentThemelime" />
+                        <i class="mdui-radio-icon"></i>
+                        Lime
+                    </label>
+                    <label class="mdui-radio mdui-col mdui-text-color-yellow" onclick="setAccentTheme('yellow')">
+                        <input type="radio" name="setAccentTheme" id="setAccentThemeyellow" />
+                        <i class="mdui-radio-icon"></i>
+                        Yellow
+                    </label>
+                    <label class="mdui-radio mdui-col mdui-text-color-amber" onclick="setAccentTheme('amber')">
+                        <input type="radio" name="setAccentTheme" id="setAccentThemeamber" />
+                        <i class="mdui-radio-icon"></i>
+                        Amber
+                    </label>
+                    <label class="mdui-radio mdui-col mdui-text-color-orange" onclick="setAccentTheme('orange')">
+                        <input type="radio" name="setAccentTheme" id="setAccentThemeorange" />
+                        <i class="mdui-radio-icon"></i>
+                        Orange
+                    </label>
+                    <label class="mdui-radio mdui-col mdui-text-color-deep-orange" onclick="setAccentTheme('deep-orange')">
+                        <input type="radio" name="setAccentTheme" id="setAccentThemedeep-orange" />
+                        <i class="mdui-radio-icon"></i>
+                        Deep-Orange
+                    </label>
+                    <br><br>
+                </div>
+            </form>
+        </div>
+        <div class="mdui-dialog-actions">
+            <div class="mdui-btn radius waves-circle" style="margin-bottom: 64px;width: 128px;" onclick="resetTheme()" mdui-dialog-close>恢复默认设置</div>
+            <div class="mdui-btn radius waves-circle" style="margin-bottom: 64px;" mdui-dialog-close>确定</div>
+        </div>
+    </div>
 </body>
-<script type="text/javascript">
-  document.write('<script src="js/main.js?v=' + now + '"><\/script\>');
+<script>
+    var offline = new mdui.Dialog('#offline', {
+        history: false
+    });
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            var VersionInfo = JSON.parse(this.responseText);
+            if (VersionInfo.versionCode > version && localStorage.getItem("doNotShowUpdateOffline" + VersionInfo.versionCode) != "true") {
+                window.setTimeout(function() {
+                    openDialog("#hotUpdateDialog");
+                }, 1000);
+                document.getElementById("hotUpdateContent").innerHTML += "更新日期：" + VersionInfo.updateDate + "<br><br>";
+                document.getElementById("hotUpdateContent").innerHTML += "新版变化：<br>" + VersionInfo.change;
+                document.getElementById("hotUpdateIgnore").onclick = function() {
+                    localStorage.setItem("doNotShowUpdateOffline" + VersionInfo.versionCode, "true");
+                    closeDialog("#hotUpdateDialog");
+                };
+                document.getElementById("hotUpdateUpdate").onclick = function() {
+                    localStorage.setItem("doNotShowUpdateOffline" + VersionInfo.versionCode, "true");
+                    closeDialog("#hotUpdateDialog");
+                    location.href = "https://www.123pan.com/s/kklDVv-6R0bd";
+                };
+            }
+        }
+    };
+    xmlhttp.open("GET", "https://burgerstudio.github.io/version.json", true);
+    xmlhttp.send();
+    document.querySelector("#yiYan").innerText = "正在获取一言";
+    document.querySelector("#yiYanTitle").innerText = "正在获取";
+    document.querySelector("#yiYanContent").innerText = "正在获取";
+    var getYiYanData = new XMLHttpRequest();
+    getYiYanData.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            yiYanData = JSON.parse(this.responseText);
+            document.querySelector("#yiYan").innerText = yiYanData.hitokoto;
+            document.querySelector("#yiYanTitle").innerText = yiYanData.from;
+            document.querySelector("#yiYanContent").innerText = yiYanData.hitokoto;
+        }
+    };
+    getYiYanData.open("GET", "https://v1.hitokoto.cn/?c=i", true);
+    getYiYanData.send();
+
+    function copyHandle(content) {
+        let copy = (e) => {
+            e.preventDefault()
+            e.clipboardData.setData('text/plain', content)
+            document.removeEventListener('copy', copy)
+        }
+        document.addEventListener('copy', copy)
+        document.execCommand("Copy");
+        mdui.snackbar({
+            message: '已复制到剪贴板'
+        });
+    }
 </script>
+<div id="updateDialog" class="update-dialog">
+    <div class="update-dialog-title">最近更新</div>
+    <div class="update-dialog-content">2023年7月26日<br>-“更多资源”新增了内容<br>-新增工具“Unicode 编码偏移”“文本倒排/乱序”<br>-“PURE - 纯音”歌单同步更新<br>-一言点击可查看详情</div>
+    <div style="text-align: center;"><button class="update-dialog-btn" onclick="closeUpdateDialog()">我知道了</button></div>
+</div>
+<script>
+    var page = "Index";
+    var pageUpdateDate = 20230726;
+</script>
+<script src="BGDialog/BGDialog.js"></script>
+<script src="pageUpdateDialog.js"></script>
+<script src="waves/waves.min.js"></script>
+<script src="setTheme.js"></script>
+<script>
+    var config = {
+        duration: 500,
+        delay: 0
+    };
+    Waves.init(config);
+    Waves.attach('.waves-block', ['waves-block']);
+    Waves.attach('.waves-circle', ['waves-circle']);
+    Waves.attach('.waves-light', ['waves-light']);
+    Waves.attach('.waves-classic', ['waves-classic']);
+    Waves.init(config);
+</script>
+
 </html>
