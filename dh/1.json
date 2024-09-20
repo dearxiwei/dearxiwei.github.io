@@ -1,46 +1,60 @@
 [{
-        "name": "Example Site 1",
+        "name": "哔哩哔哩",
         "type": 0,
-        "link": "http://www.example1.com",
+        "link": "https://www.bilibili.com/",
         "menu": []
     },
     {
-        "name": "Example Site 2",
+        "name": "学习平台合集",
         "type": 1,
         "link": "",
         "menu": [
-            ["Google", "https://www.google.com"],
-            ["GitHub", "https://www.github.com"]
+            ["智慧树", "https://passport.zhihuishu.com/"],
+            ["中国大学MOOC", "https://www.icourse163.org/"],
+            ["在浙学", "https://www.zjooc.cn/"],
+            ["学习通", "https://v8.chaoxing.com/"]
         ]
     },
     {
-        "name": "Example Site 3",
-        "type": 0,
+        "name": "温州大学合集",
+        "type": 1,
         "link": "http://www.example3.com",
-        "menu": []
-    },
-    {
-        "name": "Example Site 4",
-        "type": 1,
-        "link": "",
         "menu": [
-            ["YouTube", "https://www.youtube.com"],
-            ["Facebook", "https://www.facebook.com"]
+            ["温大官网", "https://www.wzu.edu.cn/"],
+            ["温大教务处", "https://jwc.wzu.edu.cn/"],
+            ["温大统一身份认证", "https://source.wzu.edu.cn/login"],
+            ["温大电电官网", "https://eee.wzu.edu.cn/"]
         ]
     },
     {
-        "name": "Example Site 5",
-        "type": 0,
-        "link": "http://www.example5.com",
-        "menu": []
-    },
-    {
-        "name": "Example Site 6",
+        "name": "AI合集",
         "type": 1,
         "link": "",
         "menu": [
-            ["Twitter", "https://www.twitter.com"],
-            ["LinkedIn", "https://www.linkedin.com"]
+            ["AI助手", "https://bot.360.com/"],
+            ["智谱轻言", "https://chatglm.cn/"],
+            ["文心一言", "https://yiyan.baidu.com/"],
+            ["讯飞星火", "https://xinghuo.xfyun.cn/"],
+            ["ChatGPT", "https://chat.openai.com/"],
+            ["Kimi", "https://kimi.moonshot.cn/"],
+            ["通义千问", "https://tongyi.aliyun.com/"],
+            ["腾讯混元", "https://hunyuan.tencent.com/"],
+            ["商汤", "https://chat.sensetime.com/wb/chat"],
+            ["豆包", "https://www.doubao.com/chat/"],
+            ["360智脑", "https://ai.360.com/"]
         ]
-    }
-]
+    ]
+}, {
+    "name": "Example Site 5",
+    "type": 0,
+    "link": "http://www.example5.com",
+    "menu": []
+}, {
+    "name": "Example Site 6",
+    "type": 1,
+    "link": "",
+    "menu": [
+        ["Twitter", "https://www.twitter.com"],
+        ["LinkedIn", "https://www.linkedin.com"]
+    ]
+}]
