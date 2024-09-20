@@ -486,7 +486,6 @@
 <script src="pageUpdateDialog.js"></script>
 <script src="waves/waves.min.js"></script>
 <script src="setTheme.js"></script>
-<script src="test.js"></script>
 <script>
     var config = {
         duration: 500,
