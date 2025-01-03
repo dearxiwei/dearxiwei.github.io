@@ -1,0 +1,1 @@
+python D:\HP\Desktop\Linear\Liner.py
