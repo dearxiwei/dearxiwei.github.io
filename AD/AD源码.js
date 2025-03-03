@@ -31,6 +31,7 @@ function createWebsiteLinks() {
     });
 }
 
+//密码1111
 const webkey = "MTExMQ=="; // 替换为你的实际webkey
 
 function createFloatingWindow() {
