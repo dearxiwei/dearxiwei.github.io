@@ -1,0 +1,20 @@
+{
+	"dependencies" : 
+	[
+		"materials/workshop/2655151285/effects/perspective.json",
+		"shaders/workshop/2655151285/effects/perspective.frag",
+		"shaders/workshop/2655151285/effects/perspective.vert"
+	],
+	"description" : "ui_editor_effect_perspective_description",
+	"group" : "distort",
+	"name" : "ui_editor_effect_perspective_title",
+	"passes" : 
+	[
+		{
+			"material" : "materials/workshop/2655151285/effects/perspective.json"
+		}
+	],
+	"preview" : "preview/project.json",
+	"replacementkey" : "perspective",
+	"version" : 1
+}

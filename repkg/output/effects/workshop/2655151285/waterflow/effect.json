@@ -1,0 +1,22 @@
+{
+	"dependencies" : 
+	[
+		"materials/workshop/2655151285/effects/waterflow.json",
+		"materials/workshop/2655151285/effects/waterflowphase.png",
+		"materials/workshop/2655151285/effects/waterflowphase.tex-json",
+		"shaders/workshop/2655151285/effects/waterflow.frag",
+		"shaders/workshop/2655151285/effects/waterflow.vert"
+	],
+	"description" : "ui_editor_effect_water_flow_description",
+	"group" : "animate",
+	"name" : "ui_editor_effect_water_flow_title",
+	"passes" : 
+	[
+		{
+			"material" : "materials/workshop/2655151285/effects/waterflow.json"
+		}
+	],
+	"preview" : "preview/project.json",
+	"replacementkey" : "waterflow",
+	"version" : 1
+}

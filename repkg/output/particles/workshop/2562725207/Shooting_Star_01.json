@@ -1,0 +1,115 @@
+{
+	"children" : 
+	[
+		{
+			"id" : 9,
+			"maxcount" : 30,
+			"name" : "particles/workshop/2562725207/presets/shootingstarglow.json",
+			"type" : "eventfollow"
+		}
+	],
+	"controlpoint" : 
+	[
+		{
+			"flags" : 0,
+			"id" : 0,
+			"offset" : "0 0 0"
+		},
+		{
+			"flags" : 0,
+			"id" : 1,
+			"offset" : "0 0 0"
+		},
+		{
+			"flags" : 0,
+			"id" : 2,
+			"offset" : "0 0 0"
+		},
+		{
+			"flags" : 0,
+			"id" : 3,
+			"offset" : "0 0 0"
+		},
+		{
+			"flags" : 0,
+			"id" : 4,
+			"offset" : "0 0 0"
+		},
+		{
+			"flags" : 0,
+			"id" : 5,
+			"offset" : "0 0 0"
+		},
+		{
+			"flags" : 0,
+			"id" : 6,
+			"offset" : "0 0 0"
+		},
+		{
+			"flags" : 0,
+			"id" : 7,
+			"offset" : "0 0 0"
+		}
+	],
+	"emitter" : 
+	[
+		{
+			"audioprocessingmode" : 3,
+			"directions" : "1 5 0",
+			"id" : 6,
+			"name" : "boxrandom",
+			"origin" : "-250 250 0"
+		}
+	],
+	"flags" : 1,
+	"initializer" : 
+	[
+		{
+			"id" : 2,
+			"max" : 5,
+			"min" : 4,
+			"name" : "lifetimerandom"
+		},
+		{
+			"id" : 3,
+			"max" : 5,
+			"min" : 3,
+			"name" : "sizerandom"
+		},
+		{
+			"id" : 4,
+			"max" : "250 0 0",
+			"min" : "100 0 0",
+			"name" : "velocityrandom"
+		},
+		{
+			"id" : 5,
+			"min" : "255 255 255",
+			"name" : "colorrandom"
+		}
+	],
+	"material" : "materials/workshop/2562725207/particle/shootingstar_2_2.json",
+	"maxcount" : 35,
+	"operator" : 
+	[
+		{
+			"drag" : 0.2,
+			"gravity" : "50 -50 0",
+			"id" : 7,
+			"name" : "movement"
+		},
+		{
+			"id" : 8,
+			"name" : "alphafade"
+		}
+	],
+	"renderer" : 
+	[
+		{
+			"id" : 1,
+			"length" : 0.40000001,
+			"name" : "ropetrail"
+		}
+	],
+	"starttime" : 9
+}

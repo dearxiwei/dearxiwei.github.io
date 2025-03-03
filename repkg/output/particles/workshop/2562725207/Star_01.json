@@ -1,0 +1,100 @@
+{
+	"controlpoint" : 
+	[
+		{
+			"flags" : 0,
+			"id" : 0,
+			"offset" : "0 0 0"
+		},
+		{
+			"flags" : 0,
+			"id" : 1,
+			"offset" : "0 0 0"
+		},
+		{
+			"flags" : 0,
+			"id" : 2,
+			"offset" : "0 0 0"
+		},
+		{
+			"flags" : 0,
+			"id" : 3,
+			"offset" : "0 0 0"
+		},
+		{
+			"flags" : 0,
+			"id" : 4,
+			"offset" : "0 0 0"
+		},
+		{
+			"flags" : 0,
+			"id" : 5,
+			"offset" : "0 0 0"
+		},
+		{
+			"flags" : 0,
+			"id" : 6,
+			"offset" : "0 0 0"
+		},
+		{
+			"flags" : 0,
+			"id" : 7,
+			"offset" : "0 0 0"
+		}
+	],
+	"emitter" : 
+	[
+		{
+			"audioprocessingmode" : 3,
+			"distancemax" : "1920 1080 0",
+			"id" : 5,
+			"name" : "boxrandom",
+			"rate" : 40
+		}
+	],
+	"initializer" : 
+	[
+		{
+			"id" : 2,
+			"max" : 8,
+			"min" : 4,
+			"name" : "lifetimerandom"
+		},
+		{
+			"id" : 3,
+			"max" : 20,
+			"min" : 15,
+			"name" : "sizerandom"
+		},
+		{
+			"id" : 4,
+			"min" : "255 255 255",
+			"name" : "colorrandom"
+		}
+	],
+	"material" : "materials/workshop/2562725207/particle/halo_1_1.json",
+	"maxcount" : 750,
+	"operator" : 
+	[
+		{
+			"fadeintime" : 0.1,
+			"fadeouttime" : 0.89999998,
+			"id" : 6,
+			"name" : "alphafade"
+		},
+		{
+			"frequencymax" : 3,
+			"id" : 7,
+			"name" : "oscillatealpha",
+			"scalemin" : 0.2
+		}
+	],
+	"renderer" : 
+	[
+		{
+			"id" : 1,
+			"name" : "sprite"
+		}
+	],
+	"starttime" : 0
+}

@@ -1,0 +1,20 @@
+{
+	"dependencies" : 
+	[
+		"materials/workshop/3299091578/effects/pulse.json",
+		"shaders/workshop/3299091578/effects/pulse.frag",
+		"shaders/workshop/3299091578/effects/pulse.vert"
+	],
+	"description" : "ui_editor_effect_pulse_description",
+	"group" : "animate",
+	"name" : "ui_editor_effect_pulse_title",
+	"passes" : 
+	[
+		{
+			"material" : "materials/workshop/3299091578/effects/pulse.json"
+		}
+	],
+	"preview" : "preview/project.json",
+	"replacementkey" : "pulse",
+	"version" : 1
+}

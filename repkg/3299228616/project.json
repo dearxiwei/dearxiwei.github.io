@@ -1,0 +1,912 @@
+{
+	"approved" : true,
+	"contentrating" : "Everyone",
+	"description" : "Music: sorrow - luskos\n\nUPDATE: \nFix Clock 12h RUS\nRussian added\nsmall tweak EQ distance to clock\n\nabout language: \nadd more language ​​is a challenge. \ni try it when have time\n\n\nImg source: https://steamcommunity.com/sharedfiles/filedetails/?id=3289988463",
+	"file" : "scene.json",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"_12" : 
+			{
+				"condition" : "language.value == 6",
+				"index" : 58,
+				"order" : 158,
+				"text" : "Формат часов 12ч",
+				"type" : "bool",
+				"value" : true
+			},
+			"barcolor" : 
+			{
+				"condition" : "language.value == 1",
+				"index" : 12,
+				"order" : 112,
+				"text" : "Bar Color",
+				"type" : "color",
+				"value" : "1 1 1"
+			},
+			"barcolor1" : 
+			{
+				"condition" : "language.value == 2",
+				"index" : 22,
+				"order" : 122,
+				"text" : "Màu thanh âm",
+				"type" : "color",
+				"value" : "1 1 1"
+			},
+			"barcolor2" : 
+			{
+				"condition" : "language.value == 3",
+				"index" : 32,
+				"order" : 132,
+				"text" : "条形颜色",
+				"type" : "color",
+				"value" : "1 1 1"
+			},
+			"barcolor3" : 
+			{
+				"condition" : "language.value == 4",
+				"index" : 42,
+				"order" : 142,
+				"text" : "Color de la barra",
+				"type" : "color",
+				"value" : "1 1 1"
+			},
+			"barcolor4" : 
+			{
+				"condition" : "language.value == 5",
+				"index" : 52,
+				"order" : 152,
+				"text" : "Couleur de la barre",
+				"type" : "color",
+				"value" : "1 1 1"
+			},
+			"barstyle" : 
+			{
+				"condition" : "language.value == 1",
+				"index" : 7,
+				"options" : 
+				[
+					{
+						"label" : "Up Down",
+						"value" : "1"
+					},
+					{
+						"label" : "Top",
+						"value" : "2"
+					},
+					{
+						"label" : "Center",
+						"value" : "3"
+					}
+				],
+				"order" : 107,
+				"text" : "Bar Style",
+				"type" : "combo",
+				"value" : "1"
+			},
+			"barstyle1" : 
+			{
+				"condition" : "language.value == 2",
+				"index" : 17,
+				"options" : 
+				[
+					{
+						"label" : "Lên xuống",
+						"value" : "1"
+					},
+					{
+						"label" : "Đứng thẳng",
+						"value" : "2"
+					},
+					{
+						"label" : "Trung tâm",
+						"value" : "3"
+					}
+				],
+				"order" : 117,
+				"text" : "Kiểu thanh âm nhạc",
+				"type" : "combo",
+				"value" : "1"
+			},
+			"barstyle2" : 
+			{
+				"condition" : "language.value == 3",
+				"index" : 27,
+				"options" : 
+				[
+					{
+						"label" : "向上 向下",
+						"value" : "1"
+					},
+					{
+						"label" : "顶部",
+						"value" : "2"
+					},
+					{
+						"label" : "中心",
+						"value" : "3"
+					}
+				],
+				"order" : 127,
+				"text" : "酒吧风格",
+				"type" : "combo",
+				"value" : "1"
+			},
+			"barstyle3" : 
+			{
+				"condition" : "language.value == 4",
+				"index" : 37,
+				"options" : 
+				[
+					{
+						"label" : "Arriba Abajo",
+						"value" : "1"
+					},
+					{
+						"label" : "Arriba",
+						"value" : "2"
+					},
+					{
+						"label" : "Centro",
+						"value" : "3"
+					}
+				],
+				"order" : 137,
+				"text" : "Estilo de barra",
+				"type" : "combo",
+				"value" : "1"
+			},
+			"barstyle4" : 
+			{
+				"condition" : "language.value == 5",
+				"index" : 47,
+				"options" : 
+				[
+					{
+						"label" : "De haut en bas",
+						"value" : "1"
+					},
+					{
+						"label" : "Haut",
+						"value" : "2"
+					},
+					{
+						"label" : "Centre",
+						"value" : "3"
+					}
+				],
+				"order" : 147,
+				"text" : "Style de barre",
+				"type" : "combo",
+				"value" : "1"
+			},
+			"clock24hformat" : 
+			{
+				"condition" : "language.value == 1",
+				"index" : 8,
+				"order" : 108,
+				"text" : "Clock 12h Format",
+				"type" : "bool",
+				"value" : true
+			},
+			"clock24hformat1" : 
+			{
+				"condition" : "language.value == 2",
+				"index" : 18,
+				"order" : 118,
+				"text" : "Đồng hồ 12h",
+				"type" : "bool",
+				"value" : true
+			},
+			"clock24hformat2" : 
+			{
+				"condition" : "language.value == 3",
+				"index" : 28,
+				"order" : 128,
+				"text" : "时钟 12 小时格式",
+				"type" : "bool",
+				"value" : true
+			},
+			"clock24hformat3" : 
+			{
+				"condition" : "language.value == 4",
+				"index" : 38,
+				"order" : 138,
+				"text" : "Formato del reloj 12h",
+				"type" : "bool",
+				"value" : true
+			},
+			"clock24hformat4" : 
+			{
+				"condition" : "language.value == 5",
+				"index" : 48,
+				"order" : 148,
+				"text" : "Horloge Format 12h",
+				"type" : "bool",
+				"value" : true
+			},
+			"clockcolor" : 
+			{
+				"condition" : "language.value == 1",
+				"index" : 10,
+				"order" : 110,
+				"text" : "Clock Color",
+				"type" : "color",
+				"value" : "1 1 1"
+			},
+			"clockcolor1" : 
+			{
+				"condition" : "language.value == 2",
+				"index" : 20,
+				"order" : 120,
+				"text" : "Màu đồng hồ",
+				"type" : "color",
+				"value" : "1 1 1"
+			},
+			"clockcolor2" : 
+			{
+				"condition" : "language.value == 3",
+				"index" : 30,
+				"order" : 130,
+				"text" : "时钟颜色",
+				"type" : "color",
+				"value" : "1 1 1"
+			},
+			"clockcolor3" : 
+			{
+				"condition" : "language.value == 4",
+				"index" : 40,
+				"order" : 140,
+				"text" : "Color del reloj",
+				"type" : "color",
+				"value" : "1 1 1"
+			},
+			"clockcolor4" : 
+			{
+				"condition" : "language.value == 5",
+				"index" : 50,
+				"order" : 150,
+				"text" : "Couleur de l'horloge",
+				"type" : "color",
+				"value" : "1 1 1"
+			},
+			"clockcolr" : 
+			{
+				"condition" : "language.value == 6",
+				"index" : 60,
+				"order" : 160,
+				"text" : "Цвет часов",
+				"type" : "color",
+				"value" : "1 1 1"
+			},
+			"clocklocation" : 
+			{
+				"condition" : "language.value == 1",
+				"index" : 6,
+				"options" : 
+				[
+					{
+						"label" : "Middle",
+						"value" : "1"
+					},
+					{
+						"label" : "Top Right",
+						"value" : "2"
+					},
+					{
+						"label" : "Bot Right",
+						"value" : "3"
+					},
+					{
+						"label" : "Top Left",
+						"value" : "4"
+					},
+					{
+						"label" : "Bot Left",
+						"value" : "5"
+					}
+				],
+				"order" : 106,
+				"text" : "Clock Location",
+				"type" : "combo",
+				"value" : "1"
+			},
+			"clocklocation1" : 
+			{
+				"condition" : "language.value == 2",
+				"index" : 16,
+				"options" : 
+				[
+					{
+						"label" : "Ở giữa",
+						"value" : "1"
+					},
+					{
+						"label" : "Trên phải",
+						"value" : "2"
+					},
+					{
+						"label" : "Dưới phải",
+						"value" : "3"
+					},
+					{
+						"label" : "Trên trái",
+						"value" : "4"
+					},
+					{
+						"label" : "Dưới trái",
+						"value" : "5"
+					}
+				],
+				"order" : 116,
+				"text" : "Vị trí đồng hồ",
+				"type" : "combo",
+				"value" : "1"
+			},
+			"clocklocation2" : 
+			{
+				"condition" : "language.value == 3",
+				"index" : 26,
+				"options" : 
+				[
+					{
+						"label" : "中间",
+						"value" : "1"
+					},
+					{
+						"label" : "右上",
+						"value" : "2"
+					},
+					{
+						"label" : "右下",
+						"value" : "3"
+					},
+					{
+						"label" : "左上",
+						"value" : "4"
+					},
+					{
+						"label" : "左下",
+						"value" : "5"
+					}
+				],
+				"order" : 126,
+				"text" : "时钟位置",
+				"type" : "combo",
+				"value" : "1"
+			},
+			"clocklocation3" : 
+			{
+				"condition" : "language.value == 4",
+				"index" : 36,
+				"options" : 
+				[
+					{
+						"label" : "Centro",
+						"value" : "1"
+					},
+					{
+						"label" : "Arriba derecha",
+						"value" : "2"
+					},
+					{
+						"label" : "Abajo derecha",
+						"value" : "3"
+					},
+					{
+						"label" : "Arriba izquierda",
+						"value" : "4"
+					},
+					{
+						"label" : "Abajo izquierda",
+						"value" : "5"
+					}
+				],
+				"order" : 136,
+				"text" : "Ubicación del reloj",
+				"type" : "combo",
+				"value" : "1"
+			},
+			"clocklocation4" : 
+			{
+				"condition" : "language.value == 5",
+				"index" : 46,
+				"options" : 
+				[
+					{
+						"label" : "Situé au milieu",
+						"value" : "1"
+					},
+					{
+						"label" : "En haut à droite",
+						"value" : "2"
+					},
+					{
+						"label" : "En bas à droite",
+						"value" : "3"
+					},
+					{
+						"label" : "En haut à gauche",
+						"value" : "4"
+					},
+					{
+						"label" : "En bas à gauche",
+						"value" : "5"
+					}
+				],
+				"order" : 146,
+				"text" : "Emplacement de l'horloge",
+				"type" : "combo",
+				"value" : "1"
+			},
+			"clockopacity" : 
+			{
+				"condition" : "language.value == 1",
+				"fraction" : true,
+				"index" : 9,
+				"max" : 1,
+				"min" : 0,
+				"order" : 109,
+				"precision" : 2,
+				"step" : 0.1,
+				"text" : "Clock Opacity",
+				"type" : "slider",
+				"value" : 1
+			},
+			"clockopacity1" : 
+			{
+				"condition" : "language.value == 2",
+				"fraction" : true,
+				"index" : 19,
+				"max" : 1,
+				"min" : 0,
+				"order" : 119,
+				"precision" : 2,
+				"step" : 0.1,
+				"text" : "Độ mờ đồng hồ",
+				"type" : "slider",
+				"value" : 1
+			},
+			"clockopacity2" : 
+			{
+				"condition" : "language.value == 3",
+				"fraction" : true,
+				"index" : 29,
+				"max" : 1,
+				"min" : 0,
+				"order" : 129,
+				"precision" : 2,
+				"step" : 0.1,
+				"text" : "时钟不透明度",
+				"type" : "slider",
+				"value" : 1
+			},
+			"clockopacity3" : 
+			{
+				"condition" : "language.value == 4",
+				"fraction" : true,
+				"index" : 39,
+				"max" : 1,
+				"min" : 0,
+				"order" : 139,
+				"precision" : 2,
+				"step" : 0.1,
+				"text" : "Opacidad del reloj",
+				"type" : "slider",
+				"value" : 1
+			},
+			"clockopacity4" : 
+			{
+				"condition" : "language.value == 5",
+				"fraction" : true,
+				"index" : 49,
+				"max" : 1,
+				"min" : 0,
+				"order" : 149,
+				"precision" : 2,
+				"step" : 0.1,
+				"text" : "Opacité de l'horloge",
+				"type" : "slider",
+				"value" : 1
+			},
+			"cursoreffect" : 
+			{
+				"condition" : "language.value == 1",
+				"index" : 4,
+				"order" : 104,
+				"text" : "Cursor Effect",
+				"type" : "bool",
+				"value" : true
+			},
+			"cursoreffect1" : 
+			{
+				"condition" : "language.value == 2",
+				"index" : 14,
+				"order" : 114,
+				"text" : "Hiệu ứng chuột",
+				"type" : "bool",
+				"value" : true
+			},
+			"cursoreffect2" : 
+			{
+				"condition" : "language.value == 3",
+				"index" : 24,
+				"order" : 124,
+				"text" : "光标效果",
+				"type" : "bool",
+				"value" : true
+			},
+			"cursoreffect3" : 
+			{
+				"condition" : "language.value == 4",
+				"index" : 34,
+				"order" : 134,
+				"text" : "Efecto ratón",
+				"type" : "bool",
+				"value" : true
+			},
+			"cursoreffect4" : 
+			{
+				"condition" : "language.value == 5",
+				"index" : 44,
+				"order" : 144,
+				"text" : "Effet de curseur",
+				"type" : "bool",
+				"value" : true
+			},
+			"dayformat" : 
+			{
+				"index" : 2,
+				"order" : 102,
+				"text" : "DD/MM",
+				"type" : "bool",
+				"value" : true
+			},
+			"eyesblink" : 
+			{
+				"condition" : "language.value == 1",
+				"index" : 5,
+				"order" : 105,
+				"text" : "Eyes Blink",
+				"type" : "bool",
+				"value" : true
+			},
+			"eyesblink1" : 
+			{
+				"condition" : "language.value == 2",
+				"index" : 15,
+				"order" : 115,
+				"text" : "Nháy mắt",
+				"type" : "bool",
+				"value" : true
+			},
+			"eyesblink2" : 
+			{
+				"condition" : "language.value == 3",
+				"index" : 25,
+				"order" : 125,
+				"text" : "眨眼",
+				"type" : "bool",
+				"value" : true
+			},
+			"eyesblink3" : 
+			{
+				"condition" : "language.value == 4",
+				"index" : 35,
+				"order" : 135,
+				"text" : "Guiño",
+				"type" : "bool",
+				"value" : true
+			},
+			"eyesblink4" : 
+			{
+				"condition" : "language.value == 5",
+				"index" : 45,
+				"order" : 145,
+				"text" : "Les yeux clignent",
+				"type" : "bool",
+				"value" : true
+			},
+			"hdr" : 
+			{
+				"condition" : "",
+				"index" : 1,
+				"order" : 101,
+				"text" : "HDR",
+				"type" : "bool",
+				"value" : true
+			},
+			"language" : 
+			{
+				"condition" : "",
+				"index" : 0,
+				"options" : 
+				[
+					{
+						"label" : "English",
+						"value" : "1"
+					},
+					{
+						"label" : "Vietnamese",
+						"value" : "2"
+					},
+					{
+						"label" : "Russia",
+						"value" : "6"
+					},
+					{
+						"label" : "Spanish",
+						"value" : "4"
+					},
+					{
+						"label" : "中文",
+						"value" : "3"
+					},
+					{
+						"label" : "French",
+						"value" : "5"
+					}
+				],
+				"order" : 100,
+				"text" : "Language",
+				"type" : "combo",
+				"value" : "1"
+			},
+			"musicbar" : 
+			{
+				"condition" : "language.value == 1",
+				"fraction" : true,
+				"index" : 11,
+				"max" : 1,
+				"min" : 0,
+				"order" : 111,
+				"precision" : 2,
+				"step" : 0.1,
+				"text" : "Bar Opacity",
+				"type" : "slider",
+				"value" : 1
+			},
+			"musicbar1" : 
+			{
+				"condition" : "language.value == 2",
+				"fraction" : true,
+				"index" : 21,
+				"max" : 1,
+				"min" : 0,
+				"order" : 121,
+				"precision" : 2,
+				"step" : 0.1,
+				"text" : "Độ mờ thanh âm",
+				"type" : "slider",
+				"value" : 1
+			},
+			"musicbar2" : 
+			{
+				"condition" : "language.value == 3",
+				"fraction" : true,
+				"index" : 31,
+				"max" : 1,
+				"min" : 0,
+				"order" : 131,
+				"precision" : 2,
+				"step" : 0.1,
+				"text" : "条形不透明度",
+				"type" : "slider",
+				"value" : 1
+			},
+			"musicbar3" : 
+			{
+				"condition" : "language.value == 4",
+				"fraction" : true,
+				"index" : 41,
+				"max" : 1,
+				"min" : 0,
+				"order" : 141,
+				"precision" : 2,
+				"step" : 0.1,
+				"text" : "Opacidad de la barra",
+				"type" : "slider",
+				"value" : 1
+			},
+			"musicbar4" : 
+			{
+				"condition" : "language.value == 5",
+				"fraction" : true,
+				"index" : 51,
+				"max" : 1,
+				"min" : 0,
+				"order" : 151,
+				"precision" : 2,
+				"step" : 0.1,
+				"text" : "Opacité de la barre",
+				"type" : "slider",
+				"value" : 1
+			},
+			"newproperty" : 
+			{
+				"condition" : "language.value == 6",
+				"index" : 53,
+				"order" : 153,
+				"text" : "Аудио Реактивный",
+				"type" : "bool",
+				"value" : true
+			},
+			"newproperty1" : 
+			{
+				"condition" : "language.value == 6",
+				"index" : 54,
+				"order" : 154,
+				"text" : "Эффект курсора",
+				"type" : "bool",
+				"value" : true
+			},
+			"newproperty2" : 
+			{
+				"condition" : "language.value == 6",
+				"index" : 55,
+				"order" : 155,
+				"text" : "Глаза моргают",
+				"type" : "bool",
+				"value" : true
+			},
+			"newproperty3" : 
+			{
+				"condition" : "language.value == 6",
+				"index" : 56,
+				"options" : 
+				[
+					{
+						"label" : "Середина",
+						"value" : "1"
+					},
+					{
+						"label" : "Вверху справа",
+						"value" : "2"
+					},
+					{
+						"label" : "Внизу справа",
+						"value" : "3"
+					},
+					{
+						"label" : "Вверху слева",
+						"value" : "4"
+					},
+					{
+						"label" : "Внизу слева",
+						"value" : "5"
+					}
+				],
+				"order" : 156,
+				"text" : "Расположение часов",
+				"type" : "combo",
+				"value" : "1"
+			},
+			"newproperty4" : 
+			{
+				"condition" : "language.value == 6",
+				"index" : 57,
+				"options" : 
+				[
+					{
+						"label" : "Вверх Вниз",
+						"value" : "1"
+					},
+					{
+						"label" : "верхний",
+						"value" : "2"
+					},
+					{
+						"label" : "Центр",
+						"value" : "3"
+					}
+				],
+				"order" : 157,
+				"text" : "Стиль бара",
+				"type" : "combo",
+				"value" : "1"
+			},
+			"newproperty5" : 
+			{
+				"condition" : "language.value == 6",
+				"index" : 62,
+				"order" : 162,
+				"text" : "Цвет полосы",
+				"type" : "color",
+				"value" : "1 1 1"
+			},
+			"opbar" : 
+			{
+				"condition" : "language.value == 6",
+				"fraction" : true,
+				"index" : 61,
+				"max" : 1,
+				"min" : 0,
+				"order" : 161,
+				"precision" : 2,
+				"step" : 0.1,
+				"text" : "Непрозрачность полосы",
+				"type" : "slider",
+				"value" : 1
+			},
+			"opclock" : 
+			{
+				"condition" : "language.value == 6",
+				"fraction" : true,
+				"index" : 59,
+				"max" : 1,
+				"min" : 0,
+				"order" : 159,
+				"precision" : 2,
+				"step" : 0.1,
+				"text" : "Непрозрачность часов",
+				"type" : "slider",
+				"value" : 1
+			},
+			"schemecolor" : 
+			{
+				"index" : 0,
+				"order" : 100,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "1 1 1"
+			},
+			"starreactive" : 
+			{
+				"condition" : "language.value == 1",
+				"index" : 3,
+				"order" : 103,
+				"text" : "Audio Reactive",
+				"type" : "bool",
+				"value" : true
+			},
+			"starreactive1" : 
+			{
+				"condition" : "language.value == 2",
+				"index" : 13,
+				"order" : 113,
+				"text" : "Phản hồi âm thanh",
+				"type" : "bool",
+				"value" : true
+			},
+			"starreactive2" : 
+			{
+				"condition" : "language.value == 3",
+				"index" : 23,
+				"order" : 123,
+				"text" : "音频反应",
+				"type" : "bool",
+				"value" : true
+			},
+			"starreactive3" : 
+			{
+				"condition" : "language.value == 4",
+				"index" : 33,
+				"order" : 133,
+				"text" : "Efectos sonoros",
+				"type" : "bool",
+				"value" : true
+			},
+			"starreactive4" : 
+			{
+				"condition" : "language.value == 5",
+				"index" : 43,
+				"order" : 143,
+				"text" : "Audio réactif",
+				"type" : "bool",
+				"value" : true
+			}
+		},
+		"supportsaudioprocessing" : true
+	},
+	"preview" : "preview.gif",
+	"ratingsex" : "none",
+	"ratingviolence" : "none",
+	"tags" : [ "Animal" ],
+	"title" : "Lonely Cat: Audio visualizer , Clock , Chill , Multi language",
+	"type" : "Scene",
+	"version" : 49,
+	"visibility" : "public",
+	"workshopid" : "3299228616",
+	"workshopurl" : "steam://url/CommunityFilePage/3299228616"
+}
