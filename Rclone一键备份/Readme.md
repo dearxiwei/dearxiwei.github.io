@@ -1,4 +1,3 @@
-以下是精心编写的 `README.md` 模板，包含可爱元素和详细配置说明，采用「说明书风格」设计：
 
 ```markdown
 # 📁 Alist目录同步小助手
@@ -17,15 +16,13 @@
 - 🚨 完善的错误检测机制  
 
 ---
-
+```
 ## 🔐 前置准备
 
 ### 1. 安装rclone
 [官网下载地址](https://rclone.org/downloads/) | 推荐v1.69+  
 ```powershell
-# 使用Chocolatey快速安装
-choco install rclone -y
-```
+官网下载,解压到目录,添加环境变量到PATH里面,为解压后Rclone所在的目录;
 
 ### 2. 配置Alist WebDAV连接
 假设您的Alist地址为 `http://192.168.1.1:5244/dav`，账号密码均为 `admin`  
